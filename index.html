@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0b0f">
+
+    <title>S.Y.D DOWNLOADER YT/TT</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <div class="logo">S</div>
+        <div>
+            <h2>S.Y.D DOWNLOADER</h2>
+            <span>MP3 / MP4</span>
+        </div>
+    </div>
+
+    <div class="online">
+        <span></span> ONLINE
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <div class="tag">S.Y.D OFFICIAL PROJECT</div>
+
+        <h1>
+            Download Your<br>
+            <span>Favorite Media.</span>
+        </h1>
+
+        <p>
+            Download audio dan video dengan mudah,
+            cepat, dan praktis.
+        </p>
+    </section>
+
+    <section class="downloader">
+
+        <label for="url">TEMPEL LINK VIDEO</label>
+
+        <div class="input-group">
+            <input
+                type="url"
+                id="url"
+                placeholder="Masukkan link YouTube / TikTok..."
+            >
+
+            <button id="pasteBtn" type="button">
+                PASTE
+            </button>
+        </div>
+
+        <p id="error" class="error"></p>
+
+        <h4>PILIH FORMAT</h4>
+
+        <div class="formats">
+
+            <button class="format active" data-format="mp3">
+                <strong>MP3</strong>
+                <small>Audio</small>
+            </button>
+
+            <button class="format" data-format="m4a">
+                <strong>M4A</strong>
+                <small>Audio</small>
+            </button>
+
+            <button class="format" data-format="mp4">
+                <strong>MP4</strong>
+                <small>Video</small>
+            </button>
+
+        </div>
+
+        <div id="audioOptions">
+
+            <label for="audioQuality">KUALITAS AUDIO</label>
+
+            <select id="audioQuality">
+                <option value="source">Terbaik tersedia</option>
+                <option value="320">320 kbps</option>
+                <option value="256">256 kbps</option>
+                <option value="192">192 kbps</option>
+                <option value="128">128 kbps</option>
+            </select>
+
+        </div>
+
+        <div id="videoOptions" class="hidden">
+
+            <label for="videoQuality">RESOLUSI VIDEO</label>
+
+            <select id="videoQuality">
+                <option value="best">Terbaik tersedia</option>
+                <option value="1080">1080p</option>
+                <option value="720">720p</option>
+                <option value="480">480p</option>
+                <option value="360">360p</option>
+                <option value="144">144p</option>
+            </select>
+
+            <label for="videoRatio">RASIO VIDEO</label>
+
+            <select id="videoRatio">
+                <option value="original">Original</option>
+                <option value="9:16">9:16 - Portrait</option>
+                <option value="16:9">16:9 - Landscape</option>
+                <option value="1:1">1:1 - Square</option>
+            </select>
+
+        </div>
+
+        <button id="analyzeBtn" class="download-btn">
+            ANALISIS LINK →
+        </button>
+
+        <p class="notice">
+            Gunakan media yang kamu miliki atau memiliki
+            izin untuk diunduh. Kualitas bergantung pada sumber.
+        </p>
+
+    </section>
+
+    <section id="result" class="result hidden">
+
+        <h3>HASIL ANALISIS</h3>
+
+        <p id="resultText"></p>
+
+        <div id="resultDetails"></div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 S.Y.D DOWNLOADER</p>
+    <span>POWERED BY S.Y.D</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
