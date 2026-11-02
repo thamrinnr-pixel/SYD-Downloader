@@ -44,21 +44,23 @@
 
     <section class="downloader">
 
-        <label for="url">TEMPEL LINK VIDEO</label>
+        
+<label for="audioFile">PILIH FILE AUDIO</label>
 
-        <div class="input-group">
-            <input
-                type="url"
-                id="url"
-                placeholder="Masukkan link YouTube / TikTok..."
-            >
+<div class="input-group">
+    <input
+        type="file"
+        id="audioFile"
+        accept="audio/*"
+    >
+</div>
 
-            <button id="pasteBtn" type="button">
-                PASTE
-            </button>
-        </div>
+<p id="fileInfo" class="notice">
+    Pilih file audio dari perangkat kamu.
+</p>
 
-        <p id="error" class="error"></p>
+<p id="error" class="error"></p>
+    
 
         <h4>PILIH FORMAT</h4>
 
